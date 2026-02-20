@@ -149,10 +149,10 @@ hr {
 .profile-photo {
   width: 200px;
   max-width: 100%;
-  height: 200px;                  
+  height: auto;                  
   display: block;
   margin: 10px auto;
-  border-radius: 10px;
+  border-radius: 10px auto;
 }
 .title { color: var(--secondary-color); font-style: italic; font-weight: bold; }
 .important { color: var(--primary-color); font-weight: bold; }
