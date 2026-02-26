@@ -26,6 +26,7 @@ nav {
   text-align: center;
   border-radius: 10px;
   margin: 10px 0 20px 0;
+  width: 100%;
 }
 
 nav ul {
@@ -38,16 +39,23 @@ nav ul {
 nav li {
   display: inline-block;
   margin: 0 10px;
+  list-style: none;
+  padding: 0 18px;
 }
-
+@media only screen and (max-width: 640px){
+  nav li {
+           display:inline-block;
+           padding: 0 18px;
+  } 
+}
 nav a {
   color: white;
   text-decoration: none;
   font-size: 1.2em;
   font-weight: bold;
   display: inline-block;
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 2px #3f04c9 solid;
 }
 
 nav a.current {
@@ -149,7 +157,7 @@ hr {
 .profile-photo {
   width: 200px;
   max-width: 100%;
-  height: auto;                  
+  height: 200px;                  
   display: block !important;
   margin: 10px auto;
   border-radius: 10px auto;
