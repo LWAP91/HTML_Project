@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume - Lewis Placide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="siteName.css">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="transcript.html">Transcript</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+        <li><a href="contact.html" class="selected">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="contact-container">
+      <form action="#" method="post">
+        <table class="form-table">
+          <tr>
+            <th colspan="4">Contact Information and Booking Details</th>
+          </tr>
+
+          <tr>
+            <td colspan="2">First Name<span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="text" name="first_name" required>
+              </div>
+            </td>
+          </tr>
+<tr>
+            <td colspan="2">Middle Names</td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="text" name="middle_name">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">Last Name<span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="text" name="last_name" required>
+              </div>
+            </td>
+          </tr>
+<tr>
+            <td colspan="2"> Address<span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="text" name="address" required>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">City<span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="text" name="city" required>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">State</td>
+            <td colspan="2">
+              <div class="input-box">
+                <select id="state" name="state" required>
+                  <option value="">Select your state</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Zip Code</td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="text" name="zip_code" required>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Email Address</td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="email" name="email" required>
+              </div>
+            </td>
+          </tr>
+<tr>
+            <td colspan="2">Phone Number <span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="tel" name="phone" required>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">Car Size <span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <select name="car_size" required>
+                  <option value="">Select Car Size</option>
+                  <option value="compact">Compact</option>
+                  <option value="sedan">Sedan</option>
+                  <option value="suv">SUV</option>
+                  <option value="truck">Truck</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Service Type <span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <select name="service" required>
+                  <option value="">Select a Service</option>
+                  <option value="exterior">Exterior Detailing</option>
+                  <option value="interior">Interior Detailing</option>
+                  <option value="full">Full Service</option>
+                  <option value="specialty">Boat / Specialty</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Service Date <span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="date" name="service_date" required>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Service Time <span class="required">*</span></td>
+            <td colspan="2">
+              <div class="input-box">
+                <input type="time" name="service_time" required>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Additional Notes</td>
+            <td colspan="2">
+              <div class="input-box">
+                <textarea name="notes" rows="4" placeholder="Enter any special instructions here..."></textarea>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="4" class="submit-row">
+              <input type="submit" value="Book Service">
+              <input type="reset" value="Clear Form">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+<footer>
+      <address>
+        Lewis Waterman Antoine Placide<br>
+        Venice, Florida, United States<br>
+        Email: <a href="mailto:lewisplacide91@gmail.com">lewisplacide91@gmail.com</a><br>
+        Phone: <a href="tel:19412362205">941-236-2205</a>
+      </address>
+    </footer>
+  </div>
+</body>
