@@ -21,8 +21,8 @@
       </ul>
     </nav>
 
-    <main class="contact-container">
-      <form action="#" method="post">
+    <main class="contact-container" name="Contact" id="Contact">
+      <form action="https://formspree.io/f/mdapygpo" method="post">
         <table class="form-table">
           <tr>
             <th colspan="4">Contact Information and Booking Details</th>
@@ -32,7 +32,7 @@
             <td colspan="2">First Name<span class="required">*</span></td>
             <td colspan="2">
               <div class="input-box">
-                <input type="text" name="first_name" required>
+                <input type="text" name="first_name" size="20" required>
               </div>
             </td>
           </tr>
@@ -40,7 +40,7 @@
             <td colspan="2">Middle Names</td>
             <td colspan="2">
               <div class="input-box">
-                <input type="text" name="middle_name">
+                <input type="text" name="middle_names" size="30">
               </div>
             </td>
           </tr>
@@ -48,7 +48,7 @@
             <td colspan="2">Last Name<span class="required">*</span></td>
             <td colspan="2">
               <div class="input-box">
-                <input type="text" name="last_name" required>
+                <input type="text" name="last_name" size="20" required>
               </div>
             </td>
           </tr>
@@ -56,7 +56,7 @@
             <td colspan="2"> Address<span class="required">*</span></td>
             <td colspan="2">
               <div class="input-box">
-                <input type="text" name="address" required>
+                <input type="text" name="address" size="30" required>
               </div>
             </td>
           </tr>
@@ -64,7 +64,7 @@
             <td colspan="2">City<span class="required">*</span></td>
             <td colspan="2">
               <div class="input-box">
-                <input type="text" name="city" required>
+                <input type="text" name="city" size="20" required>
               </div>
             </td>
           </tr>
@@ -73,58 +73,50 @@
             <td colspan="2">State</td>
             <td colspan="2">
               <div class="input-box">
-                <select id="state" name="state" required>
-                  <option value="">Select your state</option>
-                  <option value="AL">Alabama</option>
-                  <option value="AK">Alaska</option>
-                  <option value="AZ">Arizona</option>
-                  <option value="AR">Arkansas</option>
-                  <option value="CA">California</option>
-                  <option value="CO">Colorado</option>
-                  <option value="CT">Connecticut</option>
-                  <option value="DE">Delaware</option>
-                  <option value="FL">Florida</option>
-                  <option value="GA">Georgia</option>
-                  <option value="HI">Hawaii</option>
-                  <option value="ID">Idaho</option>
-                  <option value="IL">Illinois</option>
-                  <option value="IN">Indiana</option>
-                  <option value="IA">Iowa</option>
-                  <option value="KS">Kansas</option>
-                  <option value="KY">Kentucky</option>
-                  <option value="LA">Louisiana</option>
-                  <option value="ME">Maine</option>
-                  <option value="MD">Maryland</option>
-                  <option value="MA">Massachusetts</option>
-                  <option value="MI">Michigan</option>
-                  <option value="MN">Minnesota</option>
-                  <option value="MS">Mississippi</option>
-                  <option value="MO">Missouri</option>
-                  <option value="MT">Montana</option>
-                  <option value="NE">Nebraska</option>
-                  <option value="NV">Nevada</option>
-                  <option value="NH">New Hampshire</option>
-                  <option value="NJ">New Jersey</option>
-                  <option value="NM">New Mexico</option>
-                  <option value="NY">New York</option>
-                  <option value="NC">North Carolina</option>
-                  <option value="ND">North Dakota</option>
-                  <option value="OH">Ohio</option>
-                  <option value="OK">Oklahoma</option>
-                  <option value="OR">Oregon</option>
-                  <option value="PA">Pennsylvania</option>
-                  <option value="RI">Rhode Island</option>
-                  <option value="SC">South Carolina</option>
-                  <option value="SD">South Dakota</option>
-                  <option value="TN">Tennessee</option>
-                  <option value="TX">Texas</option>
-                  <option value="UT">Utah</option>
-                  <option value="VT">Vermont</option>
-                  <option value="VA">Virginia</option>
-                  <option value="WA">Washington</option>
-                  <option value="WV">West Virginia</option>
-                  <option value="WI">Wisconsin</option>
-                  <option value="WY">Wyoming</option>
+                <select id="state" name="state" >
+                  <option value="">Select State</option>
+                  <option value="FL" selected>FL</option>
+                  <option value="GA">GA</option>
+                  <option value="AL">AL</option>
+                  <option value="MS">MS</option>
+                  <option value="LA">LA</option>
+                  <option value="SC">SC</option>
+                  <option value="NC">NC</option>
+                  <option value="TN">TN</option>
+                  <option value="KY">KY</option>
+                  <option value="VA">VA</option>
+                  <option value="WV">WV</option>
+                  <option value="MD">MD</option>
+                  <option value="DE">DE</option>
+                  <option value="DC">DC</option>
+                  <option value="PA">PA</option>
+                  <option value="NY">NY</option>
+                  <option value="NJ">NJ</option>
+                  <option value="CT">CT</option>
+                  <option value="RI">RI</option>
+                  <option value="MA">MA</option>
+                  <option value="VT">VT</option>
+                  <option value="NH">NH</option>
+                  <option value="ME">ME</option>
+                  <option value="OH">OH</option>
+                  <option value="IN">IN</option>
+                  <option value="IL">IL</option>
+                  <option value="MI">MI</option>
+                  <option value="WI">WI</option>
+                  <option value="MN">MN</option>
+                  <option value="IA">IA</option>
+                  <option value="MO">MO</option>
+                  <option value="AR">AR</option>
+                  <option value="OK">OK</option>
+                  <option value="KS">KS</option>
+                  <option value="NE">NE</option>
+                  <option value="SD">SD</option>
+                  <option value="ND">ND</option>
+                  <option value="MT">MT</option>
+                  <option value="WY">WY</option>  
+                  <option value="AK">AK</option>
+                  <option value="HI">HI</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
             </td>
@@ -134,7 +126,7 @@
             <td colspan="2">Zip Code</td>
             <td colspan="2">
               <div class="input-box">
-                <input type="text" name="zip_code" required>
+                <input type="text" name="zip_code" required pattern="\d{5}" title="Please enter a valid 5-digit zip code">
               </div>
             </td>
           </tr>
@@ -143,7 +135,7 @@
             <td colspan="2">Email Address</td>
             <td colspan="2">
               <div class="input-box">
-                <input type="email" name="email" required>
+                <input type="email" name="email_address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
               </div>
             </td>
           </tr>
@@ -151,7 +143,7 @@
             <td colspan="2">Phone Number <span class="required">*</span></td>
             <td colspan="2">
               <div class="input-box">
-                <input type="tel" name="phone" required>
+                <input type="tel" name="phone_number" required pattern="\d{10}" title="Please enter a valid 10-digit phone number">
               </div>
             </td>
           </tr>
@@ -159,13 +151,14 @@
             <td colspan="2">Car Size <span class="required">*</span></td>
             <td colspan="2">
               <div class="input-box">
-                <select name="car_size" required>
-                  <option value="">Select Car Size</option>
-                  <option value="compact">Compact</option>
-                  <option value="sedan">Sedan</option>
-                  <option value="suv">SUV</option>
-                  <option value="truck">Truck</option>
-                </select>
+               <input type="radio" name="car_size" id="compact" value="compact">
+               <label for="compact">Compact</label>
+               <input type="radio" name="car_size" id="sedan" value="sedan">
+               <label for="sedan">Sedan</label>
+                <input type="radio" name="car_size" id="suv" value="suv">
+                <label for="suv">SUV</label>
+                <input type="radio" name="car_size" id="truck" value="truck">
+                <label for="truck">Truck</label>
               </div>
             </td>
           </tr>
@@ -207,11 +200,16 @@
             <td colspan="2">Additional Notes</td>
             <td colspan="2">
               <div class="input-box">
-                <textarea name="notes" rows="4" placeholder="Enter any special instructions here..."></textarea>
+                <textarea name="additional_notes"  cols="40" rows="4" placeholder="Enter any concerns about the service requested here..."></textarea>
               </div>
             </td>
           </tr>
-
+<tr>
+            <td colspan="4" class="submit-row">
+              <input type="checkbox" name="Car availability" id="car_availability" value="I confirm that my car will be available for the scheduled service time.">
+              <label for="car_availability">I confirm that my car will be available for the scheduled service time.</label>
+            </td>
+          </tr>
           <tr>
             <td colspan="4" class="submit-row">
               <input type="submit" value="Book Service">
