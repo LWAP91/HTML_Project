@@ -18,6 +18,7 @@
         <li><a href="transcript.html">Transcript</a></li>
         <li><a href="newsletter.html">Newsletter</a></li>
         <li><a href="contact.html">Contact</a></li>
+         <li><a href="js.html">Java Script</a></li>
       </ul>
     </nav>
 
@@ -135,5 +136,15 @@
     </footer>
 
   </div>
+  <script>
+var update = new Date(document.lastModified);
+var month = update.getMonth() + 1;
+var date = update.getDate();
+var year = update.getFullYear();
+
+document.write("<p style='font-size:12px;'>Last updated - " 
++ month + "/" + date + "/" + year + "</p>");
+</script>
+
 </body>
 </html>

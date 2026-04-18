@@ -24,6 +24,7 @@
     <li><a href="transcript.html">Transcript</a></li>
     <li><a href="newsletter.html">Newsletter</a></li>
     <li><a href="contact.html">Contact</a></li>
+    <li><a href="js.html">Java Script</a></li>
   </ul>
 </nav>
    
@@ -40,7 +41,11 @@
 <p>
         At Brand New Mobile Details, we specialize in high-quality mobile detailing service for a wide range of vehicle. Whether it is your car, boat, motorcycle, motorhome, or even a golf cart, we bring the detailing service to you- wherever you are. Our experienced team uses only the best products and techniques to ensure that every vehicle looks and feels Brand New. We believe in offering great service with no compromise, and we are commited to your satisfaction every step of the way.
     </p>
+<h2>Our Work</h2>
 
+<div class="slideshow">
+    <img id="slide" src="images/car1.jpg" width="400" height="250">
+</div>
     <br>
     <p class="important"> Our Detailling Services </p>
 <br>
@@ -84,6 +89,16 @@
 <img src="images/slogan.png" alt="Our slogan" style="border:0px;">
         </a>
         </div> <!-- That is the end of the wrapper div -->
+        <script>
+var update = new Date(document.lastModified);
+var month = update.getMonth() + 1;
+var date = update.getDate();
+var year = update.getFullYear();
+
+document.write("<p style='font-size:12px;'>Last updated - " 
++ month + "/" + date + "/" + year + "</p>");
+</script>
+
 
 </body>
 </html>
