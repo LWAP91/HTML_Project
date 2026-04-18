@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> JavaScript </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="siteName.css">
+</head>
+
+<body>
+  <div id="wrapper">
+
+   <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="transcript.html">Transcript</a></li>
+    <li><a href="newsletter.html">Newsletter</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="js.html"class="selected">Java Script</a></li>
+  </ul>
+</nav>
+<main>
+   <ol>
+    <li>
+<a href="#" onmouseover="return confirm('We can not provide the detailing service if you are not be able to supply power and water. Thank you for your understanding')">
+    Read the message before Continuing
+</a>
+    </li> <br>
+ <li>
+    <button onclick="alert('We do not accept cash, you can pay with credit or debit card. You can also use our system to pay online after the job is done')">
+        Click here
+    </button>
+</li> <br>
+<li>
+    <button onclick="askQuestion()">Enter Your address to evaluate the driving distance before continuing</button>
+    <p id="result"></p>
+</li>
+
+<script>
+function askQuestion() {
+    let address = prompt("What is your address?");
+    
+    if (address === null || address === "") {
+        document.getElementById("result").innerHTML = "No address entered.";
+    } else {
+        document.getElementById("result").innerHTML = "We do travel to " + address + "!";
+    }
+}
+</script> 
+<li>
+    <script type="text/javascript">
+  var update = new Date(document.lastModified);
+  var month = update.getMonth() + 1;
+  var date = update.getDate();
+  var year = update.getFullYear();
+
+  document.write("<p style='font-size:12px;'>Last Updated - " 
+    + month + "/" + date + "/" + year + "</p>");
+</script>
+</li> 
+<li>
+    <a href="estimate.html">Estimate</a><br>
+</li>
+   <li>
+    Image Slideshow (internal)
+    <br><br>
+    <img id="slide" src="images/car1.jpg" width="300">
+</li>
+<li>
+    Image Slideshow (external)
+    <br><br>
+    <img id="headerSlide" src="images/car1.jpg" width="300">
+</li>
+<li>
+    <button onclick="openPopup()">Open Service Message</button>
+</li>
+
+</ol>
+<script>
+function openPopup() {
+    var popupWindow = window.open("", "popupWindow", "width=400,height=250");
+
+    popupWindow.document.write("<html><head><title>Service Message</title></head><body>");
+    popupWindow.document.write("<h2>Brand New Mobile Details</h2>");
+    popupWindow.document.write("<p>Please read our booking message before continuing.</p>");
+    popupWindow.document.write("<p>Mobile detailing appointments depend on vehicle size, condition, and location.</p>");
+    popupWindow.document.write("</body></html>");
+}
+</script>
+<script src="slideshow.js"></script>
+<script>
+/*
+Source: W3Schools
+It rotates images every 3 seconds
+*/
+
+var images = [
+    "images/car1.jpg",
+    "images/car2.jpg",
+    "images/car3.jpg"
+];
+
+var index = 0;
+
+function changeImage() {
+    document.getElementById("slide").src = images[index];
+    index++;
+
+    if (index >= images.length) {
+        index = 0;
+    }
+}
+
+setInterval(changeImage, 3000);
+</script>
+
+</main>
