@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media - Lewis Placide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="siteName.css">
+</head>
+
+<body>
+  <div id="wrapper">
+
+   <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="transcript.html">Transcript</a></li>
+    <li><a href="newsletter.html">Newsletter</a></li> 
+    <li><a href="contact.html">Contact</a></li>
+     <li><a href="js.html">Java Script</a></li>
+     <li><a href="audio.html" class="selected">Multimedia</a></li>
+  </ul>
+</nav>
+<h1>Multimedia</h1>
+<ol>
+    <li>
+        Audio <br><br>
+        <audio controls src="media/audio.mp3" type="audio/mp3"></audio>
+    </li> <br>
+    <li>
+        Media <br>
+    <Video controls src="media/video.mp4" type="video/mp4" width="300" height="200"></Video> <br>
+    </li> <br>
+    <li>
+        Animated Gif <br><br>
+        <img src="media/animated gif.gif" alt="Detailed cars in action" width="300" height="200"> <br>
+    </li> <br>
+    <li>
+    Slideshow
+    <br><br>
+    <img id="fadeSlide" src="images/car1.jpg" alt="Detailed cars Slideshow" width="300" height="200">
+</li> <br>
+<li>
+    YouTube <br><br>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/b0pAAs1gzx8?;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</li><br>
+<li>
+    Facebook <br><br>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61574973011517&tabs=timeline&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+</li><br>
+<li>
+    Stacked Images <br><br>
+    <div class="stack-container">
+    <img src="images/car1.jpg" class="img1">
+    <img src="images/car2.jpg" class="img2">
+    <img src="images/car3.jpg" class="img3">
+</div>
+</li>
+
+<script>
+
+var fadeImages = [
+    "images/car1.jpg",
+    "images/car2.jpg",
+    "images/car3.jpg"
+];
+
+var fadeIndex = 0;
+
+function changeFadeSlide() {
+    fadeIndex++;
+
+    if (fadeIndex >= fadeImages.length) {
+        fadeIndex = 0;
+    }
+
+    document.getElementById("fadeSlide").src = fadeImages[fadeIndex];
+}
+
+setInterval(changeFadeSlide, 3000);
+</script>
+
+<footer>
+      <address>
+        Lewis Waterman Antoine Placide<br>
+        Venice, Florida, United States<br>
+        Email: <a href="mailto:lewisplacide91@gmail.com">lewisplacide91@gmail.com</a><br>
+        Phone: <a href="tel:19412362205">941-236-2205</a>
+      </address>
+      <p>© 2026 Lewis Waterman Antoine Placide</p>
+    </footer>
+
+  </div>
+</body>
+</html>
